@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/iv_image_cocktail"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+
+        android:scaleType="centerCrop"
+
+        app:shapeAppearance="@style/Shapes.Corner54"
+        tools:background="@drawable/cocktail_preview"
+        android:src="@drawable/gradient_shade"
+        android:layout_margin="8dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_item_head"
+        android:text="Pink Lemonade"
+        android:textColor="@color/white"
+        android:fontFamily="@font/didact_gothic_regular"
+        android:textSize="15sp"
+
+        android:layout_width="128dp"
+        android:layout_height="32dp"
+        android:layout_gravity="center|bottom"
+
+
+        android:paddingStart="10dp"
+        android:paddingEnd="9dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginBottom="28dp"
+
+        />
+
+
+</FrameLayout>

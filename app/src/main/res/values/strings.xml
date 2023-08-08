@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Cocktail Bar</string>
+    <string name="content_description">content_description</string>
+    <string name="my_cocktails">My Cocktails</string>
+    <string name="add_your_first_n_cocktail_here">Add your first \n cocktail here</string>
+    <string name="save_text">Save</string>
+    <string name="cancel_text">Cancel</string>
+    <string name="optional_field">Optional field</string>
+    <string name="field_must_filled">Add title</string>
+
+    <string name="settings_backup_permission_title_text">Нет разрешения</string>
+    <string name="settings_backup_permission_description_text">Для того, чтобы сохранить копию данных о преступлениях, требуется разрешение на запись в память устройства</string>
+    <string name="photo_picker_no_permission_title_text">Нет разрешения</string>
+    <string name="photo_picker_no_permission_description_text">Для того, чтобы отобразить фотографии, приложению требуется разрешение для чтения их из памяти устройства</string>
+
+</resources>

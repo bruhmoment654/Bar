@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="Theme.Material3.Light.NoActionBar">
+
+        <item name="floatingActionButtonLargePrimaryStyle">@color/white</item>
+        <item name="floatingActionButtonPrimaryStyle">@color/white</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+    
+    <style name="fabShapeStyle1" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerSize">50% </item>
+        <item name="backgroundTint">#4B97FF</item>
+    </style>
+
+    <style name="bottomAppBar" parent="Widget.MaterialComponents.BottomAppBar">
+        <item name="backgroundTint">@color/white</item>
+        <item name="elevation">16dp</item>
+        <item name="cornerSize">30%</item>
+        <item name="cornerFamilyTopLeft">rounded</item>
+        <item name="cornerFamilyTopRight">rounded</item>
+    </style>
+
+    <style name="Shapes.Corner54" parent="">
+        <item name="cornerSize">54dp</item>
+        <item name="cornerFamily">rounded</item>
+    </style>
+    
+    <style name="textInputLayoutCustomOutlined" parent="Widget.Material3.TextInputLayout.OutlinedBox">
+        <item name="strokeColor">@color/colorInputGray</item>
+        <item name="boxCornerRadiusBottomEnd">34dp</item>
+        <item name="boxCornerRadiusTopStart">34dp</item>
+        <item name="boxCornerRadiusBottomStart">34dp</item>
+        <item name="boxCornerRadiusTopEnd">34dp</item>
+    </style>
+
+    <style name="saveButtonCustom" parent="Widget.MaterialComponents.Button">
+
+    </style>
+</resources>

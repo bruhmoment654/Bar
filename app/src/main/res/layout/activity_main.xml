@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+    <TextView
+        android:id="@+id/tv_my_cocktails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/my_cocktails"
+        android:textColor="#313131"
+        android:fontFamily="@font/didact_gothic_regular"
+        android:textSize="36sp"
+        android:textAlignment="center"
+
+        android:layout_marginTop="24dp"
+
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_cocktails"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+
+        android:layout_marginTop="95dp"
+
+
+        android:layout_gravity="top|center"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:spanCount="2"
+        tools:listitem="@layout/item_cocktail" />
+
+    </ScrollView>
+
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottom_app_bar"
+        style="@style/bottomAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom" />
+
+    <include
+        android:id="@+id/empty_layout"
+        layout="@layout/empty_layout"
+        android:visibility="invisible"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/new_cocktail_btn"
+        style="@style/fabShapeStyle1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/content_description"
+        android:src="@drawable/ic_plus"
+        app:fabCustomSize="80dp"
+        app:layout_anchor="@id/bottom_app_bar"
+        app:tint="@color/white"
+        />
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
